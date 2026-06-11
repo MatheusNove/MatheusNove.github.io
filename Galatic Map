@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galatic Map</title>
+</head>
+<body>
+
+<h1>Galatic Map</h1>
+
+<p>Helldivers 2 map inspired project</p>
+
+<p>
+    <a href="https://mathenove.itch.io/console-rpg">
+        Try on itch.io
+    </a>
+</p>
+
+<p>
+    <a href="index.html">
+        Back to Home
+    </a>
+</p>
+
+</body>
+</html>
