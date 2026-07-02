@@ -18,8 +18,8 @@ header {
     gap : 20px;
 }
 
-logo-name img {
-    width: 80px;
+.logo-name img {
+    width: 120px;
     heigth: 80px;
 }
     
