@@ -23,7 +23,11 @@ header {
     heigth: 80px;
     object-fit: contain;
 }
-    
+
+.descrip {
+    display: flex;
+    flex-direction: column;
+}
 
 h1 {
     margin: 0;
