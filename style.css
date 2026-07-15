@@ -62,12 +62,12 @@ h1 {
     align-items: center;
 
     border-radius: 50%;
-    background-color: #1d1d1d;
+    background-color: #E8E3E3;
     transition: 0.2s;
 }
 
 .social-links a:hover {
     transform: translateY(-3px);
 
-    background-color: #303030;
+    background-color: #FFFFFF;
 }
