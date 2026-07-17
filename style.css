@@ -79,3 +79,28 @@ main {
 section {
     margin-top: 80px;
 }
+
+.project-card{
+    border:2px solid #333;
+    border-radius:12px;
+    padding:30px;
+    margin-top:30px;
+    
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:40px;
+}
+
+.project-info{
+    flex:1;
+}
+
+.project-media{
+    width:420px;
+}
+
+.project-media img{
+    width:100%;
+    border-radius:10px;
+}
