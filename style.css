@@ -5,6 +5,11 @@ body {
     margin: 0;
 }
 
+/*Color for buttons*/
+:root{
+    --accent:#C62828;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -34,6 +39,7 @@ h1 {
     font-size: 3rem;
 }
 
+/* Ball links in corner*/
 .social-links{
     display:flex;
     gap:15px;
@@ -80,11 +86,16 @@ section {
     margin-top: 80px;
 }
 
+/*Projects cards*/
 .project-card{
-    border:2px solid #333;
-    border-radius:12px;
+    /*border:2px solid #333;*/
+    background-color:#1A1A1A;
+    border:1px solid #2A2A2A;
+    /*border-radius:12px;*/
+    border-radius:16px;
     padding:30px;
-    margin-top:30px;
+    /*margin-top:30px;*/
+    margin-top:40px;
     
     display:flex;
     justify-content:space-between;
@@ -103,6 +114,40 @@ section {
 .project-media img{
     width:100%;
     border-radius:10px;
+}
+
+.project-buttons a{
+    display:inline-block;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    background-color:var(--accent);
+    color:white;
+    margin-right:10px;
+}
+
+.play-button{
+    background-color:var(--accent);
+}
+
+.github-button{
+    border:1px solid #444;
+    background:none;
+}
+
+.project-media{
+    background-color:#0F0F0F;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+/*Hover effect*/
+.project-card{
+    transition:0.2s;
+}
+
+.project-card:hover{
+    transform:translateY(-4px);
 }
 
 /*Contact Me section*/
@@ -130,5 +175,8 @@ footer{
 /*h2*/
 h2{
     font-size:2rem;
-    margin-bottom:25px;
+    margin-bottom:30px;
 }
+
+
+
