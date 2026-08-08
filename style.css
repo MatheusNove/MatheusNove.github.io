@@ -108,12 +108,17 @@ section {
 }
 
 .project-media{
-    width:420px;
+    flex:0 0 420px;
+    background-color:#0d0d0d;
+    border-radius:12px;
+    padding:15px;
+    border:1px solid #252525;
 }
 
 .project-media img{
     width:100%;
     border-radius:10px;
+    display:block;
 }
 
 .project-buttons a{
@@ -143,11 +148,28 @@ section {
 
 /*Hover effect*/
 .project-card{
+    background-color:#181818;
+
+    border:1px solid #2A2A2A;
+
+    border-radius:16px;
+
+    padding:35px;
+
+    margin-top:40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:40px;
+    
     transition:0.2s;
 }
 
 .project-card:hover{
     transform:translateY(-4px);
+
+    border-color:#7a1f1f;
 }
 
 /*Contact Me section*/
