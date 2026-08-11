@@ -1,8 +1,15 @@
-body {
-    background-color: #111;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
+body{
+    background-color:#111;
+    
+    background-image:
+        radial-gradient(
+            circle at top left,
+            rgba(120,0,0,0.15),
+            transparent 35%
+        ),
+        url("images/BackgroundHexa.jpg");
+    background-repeat:no-repeat, repeat;
+    background-size:auto, 400px;
 }
 
 /*Color for buttons*/
