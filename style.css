@@ -7,7 +7,7 @@ body{
             rgba(180, 30, 30, 0.12),
             transparent 35%
         ),
-        url("images/hexagons.jpg");
+        url("images/BackgroundHexa.jpg");
 
     background-size: cover;
     background-attachment: fixed;
