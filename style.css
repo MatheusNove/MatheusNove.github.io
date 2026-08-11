@@ -1,15 +1,23 @@
 body{
-    background-color:#111;
-    
+    background-color: #0f0f12;
+
     background-image:
         radial-gradient(
             circle at top left,
-            rgba(120,0,0,0.15),
+            rgba(180, 30, 30, 0.12),
             transparent 35%
         ),
-        url("images/BackgroundHexa.jpg");
-    background-repeat:no-repeat, repeat;
-    background-size:auto, 400px;
+        url("images/hexagons.jpg");
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+a{
+    color: #d14cff;
 }
 
 /*Color for buttons*/
@@ -44,6 +52,17 @@ header {
 h1 {
     margin: 0;
     font-size: 3rem;
+    color: white;
+}
+
+h2{
+    font-size:2rem;
+    margin-bottom:30px;
+    color: white;
+}
+
+h3{
+    color: white;
 }
 
 /* Ball links in corner*/
@@ -213,12 +232,6 @@ footer{
     border-top:1px solid #333;
     text-align:center;
     color:#888;
-}
-
-/*h2*/
-h2{
-    font-size:2rem;
-    margin-bottom:30px;
 }
 
 /*Page links*/
