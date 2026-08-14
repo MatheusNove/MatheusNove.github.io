@@ -139,6 +139,10 @@ section {
 }
 
 .project-media{
+    position:relative;
+    width:450px;
+    flex-shrink:0;
+    
     flex:0 0 420px;
     background-color:#0d0d0d;
     border-radius:12px;
@@ -148,9 +152,38 @@ section {
 
 .project-media img{
     width:100%;
-    border-radius:10px;
+    border-radius:12px;
     display:block;
 }
+
+/*Carousel buttons*/
+.carousel-btn{
+    position:absolute;
+
+    top:50%;
+    transform:translateY(-50%);
+
+    width:40px;
+    height:40px;
+
+    border:none;
+    border-radius:50%;
+
+    background:rgba(0,0,0,0.7);
+    color:white;
+
+    cursor:pointer;
+}
+
+.prev{
+    left:10px;
+}
+
+.next{
+    right:10px;
+}
+
+
 
 .project-buttons a{
     display:inline-block;
