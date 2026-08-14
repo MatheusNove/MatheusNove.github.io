@@ -49,9 +49,14 @@ header {
     flex-direction: column;
 }
 
+.descrip p {
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
 h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
 }
 
