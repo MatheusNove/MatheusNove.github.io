@@ -20,8 +20,7 @@ document
         currentImage = 0;
     }
 
-    imageElement.src =
-        images[currentImage];
+   updateImage();
 });
 
 /*Button Prev*/
@@ -36,6 +35,17 @@ document
             images.length - 1;
     }
 
-    imageElement.src =
-        images[currentImage];
+   updateImage();
 });
+
+function updateImage(){
+    imageElement.style.opacity = 0;
+
+    setTimeout(() => {
+
+        imageElement.src = images[currentImage];
+
+        imageElement.style.opacity = 1;
+
+    }, 300);
+}
