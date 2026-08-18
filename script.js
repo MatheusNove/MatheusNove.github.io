@@ -1,4 +1,34 @@
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+
 const projectCards = document.querySelectorAll(".project-card");
+
+
+
+/*LightBox*/
+projectImages.forEach(image => {
+    image.addEventListener("click", () => {
+
+        lightboxImage.src = image.src;
+        lightbox.style.display = "flex";
+
+    });
+});
+
+lightbox.addEventListener("click", event => {
+    if (event.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+});
+
+
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+        lightbox.style.display = "none";
+    }
+});
+
+
 
 projectCards.forEach(card => {
 
