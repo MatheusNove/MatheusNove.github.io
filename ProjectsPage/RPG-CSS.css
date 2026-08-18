@@ -1,0 +1,332 @@
+/* =========================
+   GENERAL
+   ========================= */
+
+body {
+    margin: 0;
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.project-header {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 40px;
+}
+
+
+.back-button {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+
+.back-button:hover {
+    color: #d03030;
+}
+
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.project-hero {
+    padding: 70px 0 50px;
+}
+
+
+.project-type {
+    color: #d03030;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+
+.project-hero h1 {
+    font-size: 4rem;
+    margin: 10px 0;
+}
+
+
+.project-intro {
+    max-width: 700px;
+    font-size: 1.3rem;
+    color: #ccc;
+}
+
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+
+.project-links a {
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+
+.primary-button {
+    background: #b52d2d;
+    color: white;
+}
+
+
+.primary-button:hover {
+    background: #d43b3b;
+}
+
+
+.secondary-button {
+    border: 1px solid #444;
+    color: white;
+}
+
+
+.secondary-button:hover {
+    border-color: #888;
+}
+
+
+
+/* =========================
+   QUICK FACTS
+   ========================= */
+
+.project-facts {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    margin: 30px 0 60px;
+}
+
+
+.project-facts div {
+    padding: 25px;
+    border-right: 1px solid #333;
+}
+
+
+.project-facts div:last-child {
+    border-right: none;
+}
+
+
+.project-facts strong {
+    display: block;
+    color: #999;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+
+.project-facts span {
+    color: #eee;
+}
+
+
+
+/* =========================
+   HERO IMAGE
+   ========================= */
+
+.hero-media {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+
+.hero-media img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+
+
+/* =========================
+   CONTENT
+   ========================= */
+
+.content-section {
+    margin: 100px 0;
+}
+
+
+.content-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #d03030;
+}
+
+
+.content-section p {
+    max-width: 800px;
+    color: #ccc;
+    font-size: 1.05rem;
+}
+
+
+
+/* =========================
+   VIDEO
+   ========================= */
+
+.video-container {
+    margin-top: 30px;
+    background: #181818;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+.video-placeholder {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+}
+
+
+
+/* =========================
+   FEATURES
+   ========================= */
+
+.feature {
+    display: grid;
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 50px;
+    align-items: center;
+    margin: 70px 0;
+}
+
+
+.feature.reverse {
+    direction: rtl;
+}
+
+
+.feature.reverse .feature-text {
+    direction: ltr;
+}
+
+
+.feature-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+.feature-text h3 {
+    font-size: 1.6rem;
+    color: white;
+}
+
+
+
+/* =========================
+   TECHNICAL PLACEHOLDER
+   ========================= */
+
+.code-placeholder {
+    margin-top: 30px;
+    padding: 60px;
+    background: #181818;
+    border: 1px solid #333;
+    border-radius: 12px;
+    color: #777;
+    text-align: center;
+}
+
+
+
+/* =========================
+   DEVELOPMENT TIMELINE
+   ========================= */
+
+.timeline {
+    border-left: 2px solid #b52d2d;
+    padding-left: 30px;
+}
+
+
+.timeline div {
+    margin-bottom: 35px;
+}
+
+
+.timeline strong {
+    color: #eee;
+}
+
+
+.timeline p {
+    margin-top: 5px;
+}
+
+
+
+/* =========================
+   END
+   ========================= */
+
+.project-end {
+    text-align: center;
+    padding: 80px 0;
+}
+
+
+.project-end h2 {
+    font-size: 2rem;
+}
+
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid #222;
+    color: #666;
+}
