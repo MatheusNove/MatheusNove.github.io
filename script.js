@@ -1,51 +1,53 @@
-const images = [
-    "images/PlaceHolderProjectImage.png",
-    "images/LogoPlaceHolder.png",
-    "images/BackgroundHexa.jpg"
-];
+const projectCards = document.querySelectorAll(".project-card");
 
-let currentImage = 0;
+projectCards.forEach(card => {
+    
+    const images = card.dataset.images.split(",");
+    let currentImage = 0;
 
 const imageElement =
     document.getElementById("console-image");
 
-/*Button Next*/
-document
-.querySelector(".next")
-.addEventListener("click", () => {
+    const imageElement = card.querySelector(".project-media img");
+    const nextButton = card.querySelector(".next");
+    const prevButton = card.querySelector(".prev");
 
-    currentImage++;
 
-    if(currentImage >= images.length){
-        currentImage = 0;
+    
+    function UpdateImage(){
+        imageElement.style.opacity = 0;
+    
+        setTimeout(() => {
+    
+            imageElement.src = images[currentImage];
+    
+            imageElement.style.opacity = 1;
+    
+        }, 300);
     }
 
-   updateImage();
-});
 
-/*Button Prev*/
-document
-.querySelector(".prev")
-.addEventListener("click", () => {
+    
+    /*Button Next*/
+    nextButton.addEventListener("click", () => {    
+        currentImage++;
+    
+        if(currentImage >= images.length){
+            currentImage = 0;
+        }
+    
+       UpdateImage();
+    });
 
-    currentImage--;
+    /*Button Prev*/
+    prevButton.addEventListener("click", () => {    
+        currentImage--;
+    
+        if(currentImage < 0){
+            currentImage =
+                images.length - 1;
+        }
+    
+       UpdateImage();
+    });
 
-    if(currentImage < 0){
-        currentImage =
-            images.length - 1;
-    }
-
-   updateImage();
-});
-
-function updateImage(){
-    imageElement.style.opacity = 0;
-
-    setTimeout(() => {
-
-        imageElement.src = images[currentImage];
-
-        imageElement.style.opacity = 1;
-
-    }, 300);
-}
