@@ -2,12 +2,10 @@ const projectCards = document.querySelectorAll(".project-card");
 
 projectCards.forEach(card => {
 
-    // Get the images belonging to THIS card
     const images = card.dataset.images.split(",");
 
     let currentImage = 0;
 
-    // Find the elements belonging to THIS card
     const imageElement = card.querySelector(".project-media img");
     const nextButton = card.querySelector(".next");
     const prevButton = card.querySelector(".prev");
