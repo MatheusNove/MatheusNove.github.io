@@ -45,7 +45,7 @@ projectCards.forEach(card => {
 
     /*LightBox Click*/
     imageElement.addEventListener("click", () => {
-        lightboxImage.src = image.src;
+        lightboxImage.src = imageElement.src;
         lightbox.style.display = "flex";
     });
     
