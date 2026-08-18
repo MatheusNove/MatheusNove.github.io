@@ -221,6 +221,15 @@ section {
     font-weight:bold;
 }
 
+.sendToPage-button{
+    background-color:#c62828;
+    color:white;
+    padding:12px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
 .github-button{
     border:1px solid #444;
     color:white;
